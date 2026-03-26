@@ -9,7 +9,7 @@ echo "---------------------------------------------------------------"
 if [ "$ARCH" = "x86_64" ]; then
     pacman -Syu --noconfirm mixxx
 else
-    mixxx-git
+    make-aur-package mixxx-git
 fi
 
 echo "Installing debloated packages..."
