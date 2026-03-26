@@ -17,7 +17,7 @@ pacman -Syu --noconfirm \
 if [ "$ARCH" = "x86_64" ]; then
     pacman -Syu --noconfirm mixxx
 else
-    make-aur-package mixxx-git
+    make-aur-package mixxx
     #git clone https://gitlab.archlinux.org/archlinux/packaging/packages/mixxx
     #cd mixxx
     #useradd -m builder
