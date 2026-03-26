@@ -18,6 +18,7 @@ pacman -Syu --noconfirm \
 if [ "$ARCH" = "x86_64" ]; then
     pacman -Syu --noconfirm mixxx
 else
+    pacman -Syu --noconfirm vulkan-headers
     make-aur-package mixxx-git
     #git clone https://gitlab.archlinux.org/archlinux/packaging/packages/mixxx
     #cd mixxx
