@@ -20,12 +20,6 @@ if [ "$ARCH" = "x86_64" ]; then
 else
     pacman -Syu --noconfirm vulkan-headers
     make-aur-package mixxx-git
-    #git clone https://gitlab.archlinux.org/archlinux/packaging/packages/mixxx
-    #cd mixxx
-    #useradd -m builder
-    #echo "builder ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/builder
-    #sudo chown -R builder:builder .
-    #sudo -u builder makepkg -si --noconfirm
 fi
 
 echo "Installing debloated packages..."
