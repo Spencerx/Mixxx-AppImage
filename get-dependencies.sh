@@ -9,18 +9,12 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
         kvantum         \
         lxqt-qtplugin   \
+        mixxx           \
         pipewire-audio  \
         pipewire-jack   \
         portaudio       \
         qt6-multimedia  \
         qt6ct
-
-if [ "$ARCH" = "x86_64" ]; then
-    pacman -Syu --noconfirm mixxx
-else
-    pacman -Syu --noconfirm vulkan-headers
-    make-aur-package mixxx-git
-fi
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
